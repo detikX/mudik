@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Nunito+Sans&display=swap');
+
+@import 'banner';
+
+main,
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.firstletter {
+    &::first-letter {
+        float: left;
+        font-weight: bold;
+        margin-right: 8px;
+        font-size: 60px;
+        font-size: 6rem;
+        line-height: 40px;
+        line-height: 4rem;
+        height: 4rem;
+        text-transform: uppercase;
+    }
+}
+
+.slick {
+    &-slide {
+        margin: 0 16px;
+    }
+
+    &-list {
+        margin: 0 -16px;
+    }
+
+    &-next,
+    &-prev {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        width: 42px;
+        background: rgba(#87c3d3, .6);
+        // backdrop-filter: blur(2px);
+        height: 42px;
+        border-radius: 50%;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: rgba(#87c3d3, .8);
+        }
+
+        &::before {
+            font-family: "FontAwesome";
+            z-index: 99;
+            // color: rgba($color: #000000, $alpha: 0.8);
+            color: white;
+        }
+    }
+
+    &-next {
+        right: -16px;
+        // left: 0;
+        // left: -15%;
+        z-index: 9;
+
+        // transform: translate(-100%, 0%);
+        &::before {
+            content: "\f054";
+        }
+    }
+
+    &-prev {
+        // left: -20%;
+        left: -16px;
+        z-index: 9;
+
+        // transform: translate(-100%, 0%);
+        &::before {
+            content: "\f053";
+        }
+    }
+
+    &-dots {
+        li {
+            button {
+                &::before {
+                    // color: #fff;
+                    font-size: 39px;
+                    content: "";
+                    width: 20px;
+                    height: 3px;
+                    // background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.isdesktop {
+    display: block;
+
+    @media screen and (max-width: 766px) {
+        display: none;
+    }
+}
+
+.ismobile {
+    display: none;
+
+    @media screen and (max-width: 766px) {
+        display: block;
+    }
+}
+
+h2,
+h3 {
+    font-weight: 700;
+}
+
+section {
+    // overflow-x: hidden;
+    padding: 32px 0;
+    min-height: 100vh;
+}
+
+.totop {
+    position: relative;
+    z-index: 88;
+}
