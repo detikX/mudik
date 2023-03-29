@@ -9,6 +9,9 @@
         width: fit-content;
         position: relative;
         margin: 0 auto 16px;
+        @media screen and (max-width: 766px) {
+            margin: 0 auto 36px;
+        }
         .garis {
             position: absolute;
             // left: 0;
@@ -19,6 +22,9 @@
             background: white;
             width: 90%;
             transform: translate(-50%, 0%);
+            @media screen and (max-width: 766px) {
+                bottom: -16%;
+            }
             &::before {
                 content: "";
                 left: 0;
@@ -42,6 +48,9 @@
             font-size: 3.5rem;
             font-weight: bold;
             font-family: 'Kanit' !important;
+            @media screen and (max-width: 766px) {
+                font-size: 2.5rem;
+            }
         }
     }
     &__img {
