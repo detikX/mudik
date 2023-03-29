@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;700&family=Nunito+Sans&display=swap');
-
 @import 'banner';
-
+@import 'peta';
+@import 'pembukaan';
 main,
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -26,11 +26,9 @@ body {
     &-slide {
         margin: 0 16px;
     }
-
     &-list {
         margin: 0 -16px;
     }
-
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, 0.5);
@@ -39,13 +37,11 @@ body {
         // backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
-
         &:hover,
         &:focus,
         &:active {
             background: rgba(#87c3d3, .8);
         }
-
         &::before {
             font-family: "FontAwesome";
             z-index: 99;
@@ -53,30 +49,25 @@ body {
             color: white;
         }
     }
-
     &-next {
         right: -16px;
         // left: 0;
         // left: -15%;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f054";
         }
     }
-
     &-prev {
         // left: -20%;
         left: -16px;
         z-index: 9;
-
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f053";
         }
     }
-
     &-dots {
         li {
             button {
@@ -95,7 +86,6 @@ body {
 
 .isdesktop {
     display: block;
-
     @media screen and (max-width: 766px) {
         display: none;
     }
@@ -103,7 +93,6 @@ body {
 
 .ismobile {
     display: none;
-
     @media screen and (max-width: 766px) {
         display: block;
     }
