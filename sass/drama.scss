@@ -6,6 +6,38 @@
     }
     .judul-article {
         text-align: center;
+        width: fit-content;
+        position: relative;
+        margin: 0 auto 16px;
+        .garis {
+            position: absolute;
+            // left: 0;
+            left: 50%;
+            // right: 0;
+            bottom: -8%;
+            height: 5px;
+            background: white;
+            width: 90%;
+            transform: translate(-50%, 0%);
+            &::before {
+                content: "";
+                left: 0;
+                width: 100px;
+                height: 5px;
+                bottom: 0;
+                background: #f7322c;
+                position: absolute;
+            }
+            &::after {
+                content: "";
+                right: 0;
+                width: 50px;
+                height: 5px;
+                bottom: 0;
+                background: gray;
+                position: absolute;
+            }
+        }
         h2 {
             font-size: 3.5rem;
             font-weight: bold;
