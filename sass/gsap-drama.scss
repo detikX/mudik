@@ -1,120 +1,136 @@
-.gsap-drama {
-    .scroller {
-        height: 100vh;
+/* 
+I'm using CSS Grid to layer three slides one on top of the other. 
+You could also use absolute positioning if you prefer. 
+
+I chose CSS Grid because it lets the child elements (the slides) 
+retain their height. If you use absolute positioning, you will 
+want to specify a height for the container.
+*/
+
+.slide-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .slide {
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  // Just styling for the demo, none of this is needed for functionality.
+  
+  $offwhite: #ffd571;
+  $sailboat: #3c2946;
+  $coral: #ee6f57;
+  $jet: #333333;
+  $tulip: #56556e;
+  
+  body {
+    background-color: $offwhite;
+    color: $jet;
+    font-family: "Lora", "Georgia", serif;
+  }
+  
+  section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5rem;
+  }
+  
+  .lead {
+    font-size: 5vw;
+    line-height: 1.4;
+    max-width: 90vw;
+  }
+  
+  .scroll-trigger {
+    background-color: $sailboat;
+  }
+  
+  .title {
+    font-size: 6vw;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .slide {
+    width: 75vw;
+    margin: 3rem auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .slide-container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .image {
+    margin: 5rem 0;
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 2;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 50%;
+  
+    .slide[data-slide="1"] & {
+      background-color: rgba(255, 255, 255, 0.1);
     }
-    .orange {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 100vh;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        background-color: #753500;
+  
+    .slide[data-slide="2"] & {
+      background-color: $tulip;
     }
-    .text {
-        color: #fff;
+  
+    .slide[data-slide="3"] & {
+      background-color: rgba(255, 255, 255, 0.2);
     }
-    .black {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        height: 100vh;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        background-color: #070707;
-    }
-    .blue {
-        height: 100vh;
-        background-color: #00026d;
-    }
-    .text-wrap {
-        position: relative;
-        overflow: hidden;
-        width: 450px;
-        height: 80vh;
-    }
-    .panel-text {
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: 0%;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        font-size: 40px;
-        text-transform: uppercase;
-        font-weight: 900;
-        text-align: center;
-        background-color: #070707;
-        transform: translateY(100%);
-        opacity: 0;
-    }
-    .panel-text.blue-text {
-        color: blue;
-    }
-    .panel-text.red-text {
-        color: red;
-    }
-    .panel-text.purple-text {
-        color: purple;
-    }
-    .panel-text.orange-text {
-        color: orange;
-    }
-    .p-wrap {
-        position: relative;
-        overflow: hidden;
-        width: 450px;
-        height: 80vh;
-    }
-    .panel {
-        position: absolute;
-        left: 0%;
-        top: 0%;
-        right: 0%;
-        bottom: 0%;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background-image: url("../images/5ed12171d9d512cb2feead83_5.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-    .panel._2 {
-        z-index: 1;
-        background-image: url("../images/5f5a5b3515c4dd0c2c455925_110642301_938622823267359_7859124022958180678_n201.jpg");
-    }
-    .panel.blue {
-        z-index: auto;
-    }
-    .panel.red {
-        z-index: auto;
-        background-color: red;
-        background-image: none;
-    }
-    .panel.orange {
-        z-index: auto;
-        background-color: #cf5d00;
-        background-image: none;
-    }
-    .panel.purple {
-        z-index: auto;
-        background-color: #808;
-        background-image: none;
-    }
-}
+  }
+  
+  .text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2.5vw;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.75);
+    grid-column: 1 / span 2;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .text:nth-of-type(1),
+  .text:nth-of-type(2) {
+    grid-row: 1;
+  }
+  
+  .text:nth-of-type(3),
+  .text:nth-of-type(4) {
+    grid-row: 2;
+  }
+  
+  .text:nth-of-type(1),
+  .text:nth-of-type(3) {
+    align-self: start;
+    margin-right: 5rem;
+  }
+  
+  .text:nth-of-type(2),
+  .text:nth-of-type(4) {
+    align-self: center;
+    grid-column: 3 / span 2;
+    margin-left: 5rem;
+  }
+  
+  .scroll-prompt {
+    height: 200px;
+    width: 1px;
+    background-color: $jet;
+    display: block;
+    margin: 2rem 0.2rem 2rem;
+  }
+  
