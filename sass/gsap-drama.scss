@@ -7,6 +7,9 @@ retain their height. If you use absolute positioning, you will
 want to specify a height for the container.
 */
 
+.gsap-drama {
+    
+}
 .slide-container {
     display: grid;
     grid-template-rows: 1fr;
@@ -28,8 +31,8 @@ want to specify a height for the container.
   
   body {
     background-color: $offwhite;
-    color: $jet;
-    font-family: "Lora", "Georgia", serif;
+    // color: $jet;
+    // font-family: "Lora", "Georgia", serif;
   }
   
   section {
@@ -55,6 +58,7 @@ want to specify a height for the container.
     margin-bottom: 3rem;
     color: #ffffff;
     text-align: center;
+    font-family: "Kanit" !important;
   }
   
   .slide {
@@ -68,6 +72,8 @@ want to specify a height for the container.
   
   .slide-container {
     display: grid;
+    position: relative;
+    top: -110px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
   }
@@ -94,7 +100,7 @@ want to specify a height for the container.
   }
   
   .text {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 2.5vw;
     line-height: 1.3;
     color: rgba(255, 255, 255, 0.75);
