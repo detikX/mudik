@@ -59,6 +59,10 @@ want to specify a height for the container.
     color: #ffffff;
     text-align: center;
     font-family: "Kanit" !important;
+    @media screen and (max-width:766px) {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
   }
   
   .slide {
@@ -76,6 +80,9 @@ want to specify a height for the container.
     top: -110px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+    @media screen and (max-width:766px) {
+        top: 0;
+    }
   }
   
   .image {
@@ -107,6 +114,10 @@ want to specify a height for the container.
     grid-column: 1 / span 2;
     position: relative;
     z-index: 1;
+    @media screen and (max-width:766px) {
+        grid-column: 1 / span 3;
+        font-size: 4vw;
+    }
   }
   
   .text:nth-of-type(1),
@@ -122,14 +133,14 @@ want to specify a height for the container.
   .text:nth-of-type(1),
   .text:nth-of-type(3) {
     align-self: start;
-    margin-right: 5rem;
+    margin-right: 1rem;
   }
   
   .text:nth-of-type(2),
   .text:nth-of-type(4) {
     align-self: center;
     grid-column: 3 / span 2;
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
   
   .scroll-prompt {
