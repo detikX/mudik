@@ -1,9 +1,32 @@
 .tol {
     position: relative;
+    background: linear-gradient(to bottom, #2f8bcc, white);
+
+    .awan {
+        position: absolute;
+        z-index: 99;
+        top: -135px;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+
+        @media screen and (max-width:766px) {
+            top: -36px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 
     .judul {
         h2 {
             font-size: 4rem;
+            color: white;
+            text-shadow: 2px 2px black;
 
             // font-weight: 700;
             @media screen and (max-width:766px) {
@@ -27,9 +50,16 @@
         }
     }
 
+    .line {
+        width: 100%;
+        height: 2px;
+        background: gray;
+        margin: 24px 0;
+    }
+
     .wrapings {
         // background: white;
-        margin-bottom: 8px;
+        // margin-bottom: 32px;
     }
 
     .details {
