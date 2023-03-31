@@ -1,35 +1,45 @@
 .banner {
     position: relative;
+
     // background: ;
     .imagex {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     .judul {
         position: absolute;
         left: 50%;
         top: 20%;
         transform: translate(-50%, -50%);
+        // background: white;
+
         @media screen and (max-width: 766px) {
             transform: initial;
             left: 0;
             top: 10%;
         }
+
         h2 {
-            font-family: 'Alkatra';
-            font-size: 4.5rem;
+            // font-family: 'Alkatra';
+            font-family: 'Kanit';
+            font-size: 5.5rem;
             text-align: center;
             color: #a8101d;
-            text-shadow: 2px 2px white;
+            line-height: 5rem;
+            text-shadow: 3px 3px white;
+
             @media screen and (max-width: 766px) {
                 font-size: 2.8rem;
+                line-height: 2.6rem;
             }
         }
     }

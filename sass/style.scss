@@ -4,6 +4,7 @@
 @import 'pembukaan';
 @import 'drama';
 @import 'gsap-drama';
+
 main,
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -28,9 +29,11 @@ body {
     &-slide {
         margin: 0 16px;
     }
+
     &-list {
         margin: 0 -16px;
     }
+
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, 0.5);
@@ -39,11 +42,13 @@ body {
         // backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
+
         &:hover,
         &:focus,
         &:active {
             background: rgba(#87c3d3, .8);
         }
+
         &::before {
             font-family: "FontAwesome";
             z-index: 99;
@@ -51,25 +56,30 @@ body {
             color: white;
         }
     }
+
     &-next {
         right: -16px;
         // left: 0;
         // left: -15%;
         z-index: 9;
+
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f054";
         }
     }
+
     &-prev {
         // left: -20%;
         left: -16px;
         z-index: 9;
+
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f053";
         }
     }
+
     &-dots {
         li {
             button {
@@ -88,6 +98,7 @@ body {
 
 .isdesktop {
     display: block;
+
     @media screen and (max-width: 766px) {
         display: none;
     }
@@ -95,6 +106,7 @@ body {
 
 .ismobile {
     display: none;
+
     @media screen and (max-width: 766px) {
         display: block;
     }
@@ -109,8 +121,11 @@ section {
     // overflow-x: hidden;
     padding: 32px 0;
     min-height: 100vh;
-    p, div {
-        font-size: 1.3rem;
+
+    p,
+    div {
+        font-size: 1.2rem;
+
         @media screen and (max-width:766px) {
             font-size: 1rem;
         }
