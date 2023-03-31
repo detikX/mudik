@@ -54,10 +54,9 @@ body {
 
 section {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 5rem;
+  // display: flex;// justify-content: center;
+  // flex-direction: column;
+  // padding: 5rem;
 }
 
 .lead {
@@ -131,7 +130,7 @@ section {
   }
 }
 
-.image {
+.image88 {
   margin: 5rem 0;
   grid-row: 1 / span 2;
   grid-column: 2 / span 2;
