@@ -1,7 +1,12 @@
 .tol {
     position: relative;
     background: linear-gradient(to bottom, #2f8bcc, white);
-
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        // background: linear-gradient(to top, #db9c31, transparent);
+    }
     .awan {
         position: absolute;
         z-index: 99;
@@ -10,61 +15,50 @@
         left: 0;
         width: 100%;
         height: auto;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             top: -36px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     .judul {
         h2 {
             font-size: 4rem;
             color: white;
             text-shadow: 2px 2px black;
-
             // font-weight: 700;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 font-size: 2.5rem;
             }
         }
     }
-
     .image {
         width: 420px;
         height: auto;
-
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             width: auto;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .line {
         width: 100%;
         height: 2px;
         background: #317ea5;
         margin: 24px 0;
     }
-
     .wrapings {
         // background: white;
         // margin-bottom: 32px;
     }
-
     .details {
         margin-bottom: 8px;
-
         .rute {
             background: #e0a726;
             width: fit-content;
@@ -73,37 +67,30 @@
             position: relative;
             // margin-bottom: 16px;
         }
-
         &__text {
             color: white;
             font-size: 1.7rem;
             font-family: 'Kanit';
         }
-
         table {
             // background: #97c6e4;
             margin-bottom: 0;
-
             td {
                 border-top: 1px solid transparent;
-
                 &:last-child {
                     font-weight: bold;
                 }
-
                 // border-radius: 8px;
                 @media screen and (max-width:766px) {
                     font-size: .9rem;
                 }
             }
         }
-
         .bungkus {
             background: rgba($color: #97c6e4, $alpha: .8);
             padding: 8px;
             border-radius: 8px;
         }
-
         &__icon {
             position: absolute;
             right: -32px;
@@ -114,7 +101,6 @@
             height: 48px;
             border-radius: 50%;
             padding: 6px;
-
             img {
                 width: 100%;
                 height: 100%;

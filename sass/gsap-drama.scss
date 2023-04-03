@@ -63,7 +63,8 @@ section {
 }
 
 .scroll-trigger {
-    background-color: $orange;
+    // background-color: $orange;
+    background: #3c97c7;
     position: relative;
     .ilustrasi {
         position: absolute;
@@ -152,7 +153,7 @@ section {
         // background-repeat: no-repeat;
     }
     .slide[data-slide="2"] & {
-        background-color: $tulip;
+        background: rgba($tulip, .3);
     }
     .slide[data-slide="3"] & {
         background-color: rgba(255, 255, 255, 0.2);
