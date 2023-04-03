@@ -1,21 +1,19 @@
 .peta {
     // background: #fd6669;
-    background: #bcf69d;
+    // background: #bcf69d;
+    background: rgba(#2f8bcc, .4);
     // margin-left: 42px;
     position: relative;
-
     &__image {
         width: 100%;
         display: inline-block;
         height: 420px;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .judul-hero {
         background: #00b15c;
         width: fit-content;
@@ -27,7 +25,6 @@
         z-index: 9;
         padding: 8px;
         position: relative;
-
         &::before {
             content: "";
             position: absolute;
@@ -37,7 +34,6 @@
             height: 8px;
             background: grey;
         }
-
         &::after {
             content: "";
             position: absolute;
@@ -47,7 +43,6 @@
             height: 8px;
             background: grey;
         }
-
         h3 {
             // background-color: white;
             margin: 0;
@@ -59,7 +54,6 @@
             background: #00c174;
             padding: 16px;
             font-size: 3rem;
-
             @media screen and (max-width: 766px) {
                 font-size: 2.7rem;
                 padding: 8px;
