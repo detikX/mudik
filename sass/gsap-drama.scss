@@ -9,6 +9,7 @@ want to specify a height for the container.
 
 .gsap-drama {
     position: relative;
+
     .ilustrasi {
         position: absolute;
         left: 0;
@@ -17,6 +18,7 @@ want to specify a height for the container.
         bottom: 0;
         width: 100%;
         height: 100%;
+
         img {
             width: 100%;
             height: 100%;
@@ -43,6 +45,7 @@ $coral: #ee6f57;
 $orange: #db9c31;
 $jet: #333333;
 $tulip: #56556e;
+
 body {
     background-color: $offwhite;
     // color: $jet;
@@ -64,8 +67,10 @@ section {
 
 .scroll-trigger {
     // background-color: $orange;
-    background: #3c97c7;
+    // background: #3c97c7;
+    background: #4caf50;
     position: relative;
+
     .ilustrasi {
         position: absolute;
         left: 0;
@@ -74,6 +79,7 @@ section {
         bottom: 0;
         width: 100%;
         height: 100%;
+
         &::before {
             content: "";
             position: absolute;
@@ -83,6 +89,7 @@ section {
             bottom: 0;
             background: linear-gradient(to top, rgba(60, 41, 70, 0.85), rgba(60, 41, 70, 1));
         }
+
         img {
             width: 100%;
             height: 100%;
@@ -97,6 +104,7 @@ section {
     color: #ffffff;
     text-align: center;
     font-family: "Kanit" !important;
+
     @media screen and (max-width: 766px) {
         font-size: 3rem;
         line-height: 2.5rem;
@@ -118,6 +126,7 @@ section {
     top: -110px;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
+
     @media screen and (max-width: 766px) {
         top: 0;
     }
@@ -128,11 +137,13 @@ section {
     bottom: 35vh;
     width: 60vw;
     right: 0;
+
     @media screen and (max-width: 766px) {
         bottom: 0;
         width: 80vw;
         right: initial;
     }
+
     img {
         width: 100%;
         height: 100%;
@@ -147,14 +158,17 @@ section {
     height: 0;
     padding-bottom: 100%;
     border-radius: 50%;
+
     .slide[data-slide="1"] & {
         background-color: rgba(255, 255, 255, 0.1);
         // background-image: url('../img/java.png');
         // background-repeat: no-repeat;
     }
+
     .slide[data-slide="2"] & {
         background: rgba($tulip, .3);
     }
+
     .slide[data-slide="3"] & {
         background-color: rgba(255, 255, 255, 0.2);
     }
@@ -168,6 +182,7 @@ section {
     grid-column: 1 / span 2;
     position: relative;
     z-index: 1;
+
     @media screen and (max-width: 766px) {
         grid-column: 1 / span 3;
         font-size: 1.1rem;
