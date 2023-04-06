@@ -65,9 +65,20 @@
             }
         }
     }
+    @keyframes MovePeta {
+        0%,
+        100% {
+            left: 0%;
+        }
+        50% {
+            left: 3%;
+        }
+    }
     .image {
         width: 420px;
         height: 260px;
+        left: 0%;
+        animation: MovePeta 2.5s linear infinite;
         position: relative;
         &__gambar,
         &__garis {
