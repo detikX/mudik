@@ -80,6 +80,20 @@
         left: 0%;
         // animation: MovePeta 2.5s linear infinite;
         position: relative;
+        .mobild {
+            position: absolute;
+            right: 11vw;
+            bottom: 7vh;
+            width: 50px;
+            height: auto;
+            z-index: 9;
+            // transform: rotate(46deg);
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         &__gambar,
         &__garis {
             position: absolute;
