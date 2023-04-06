@@ -41,6 +41,7 @@
             width: 230px;
             height: 230px;
             top: 60vh;
+            z-index: 4;
             @media screen and (max-width: 766px) {
                 top: 61vh;
                 width: 200px;
@@ -51,6 +52,7 @@
             width: 260px;
             height: auto;
             bottom: 2vh;
+            z-index: 5;
             @media screen and (max-width: 766px) {
                 left: 0vw;
                 width: 230px;
@@ -63,12 +65,22 @@
             height: auto;
             right: 10vw;
             top: 60vh;
+            z-index: 2;
+            @media screen and (max-width: 766px) {
+                right: initial;
+                left: 70vw;
+            }
         }
         &-4 {
             width: 200px;
             right: 0;
             height: auto;
             bottom: 2vh;
+            @media screen and (max-width: 766px) {
+                bottom: 8vh;
+                z-index: 9;
+                right: -20vw;
+            }
         }
     }
     .imagex {
