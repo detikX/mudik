@@ -110,3 +110,6 @@ tl.from(".title", {
         opacity: 0,
         duration: 1
     });
+
+
+$('.single-item').slick();
