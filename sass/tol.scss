@@ -11,7 +11,8 @@
     .datanya {
         h3 {
             color: white;
-            font-size: 2rem;
+            font-size: 1.6rem;
+            text-shadow: 1px 1px black;
             margin-bottom: 8px;
         }
     }
@@ -56,6 +57,7 @@
         h2 {
             font-size: 4rem;
             color: white;
+            font-family: 'Kanit';
             text-shadow: 2px 2px black;
             // font-weight: 700;
             @media screen and (max-width: 766px) {
@@ -114,8 +116,10 @@
         }
         &__text {
             color: white;
-            font-size: 1.7rem;
-            font-family: 'Kanit';
+            font-size: 1.3rem;
+            // text-shadow: 1px 1px black;
+            // font-family: 'Kanit';
+            font-weight: bold;
         }
         table {
             // background: #97c6e4;
@@ -135,6 +139,7 @@
             background: rgba($color: #97c6e4, $alpha: .8);
             padding: 8px;
             border-radius: 8px;
+            font-size: 1rem;
         }
         &__icon {
             position: absolute;
