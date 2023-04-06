@@ -27,7 +27,7 @@ tl.from(".title", {
         duration: 1
     })
     .from(
-        "[data-slide='1'] .image88, [data-slide='1'] .image-peta", {
+        "[data-slide='1'] .image88,[data-slide='1'] .slide-title, [data-slide='1'] .image-peta", {
             opacity: 0,
             duration: 1,
             scale: 0.75
@@ -43,14 +43,14 @@ tl.from(".title", {
         "+=1"
     )
     .to(
-        "[data-slide='1'] .text", {
+        "[data-slide='1'] .text, [data-slide='1'] .slide-title", {
             opacity: 0,
             duration: 1,
             stagger: 1
         },
         "+=10"
     )
-    .to("[data-slide='1'] .image88, [data-slide='1'] .image-peta", {
+    .to("[data-slide='1'] .image88, [data-slide='1'] .slide-title [data-slide='1'] .image-peta", {
         opacity: 0,
         duration: 1
     })

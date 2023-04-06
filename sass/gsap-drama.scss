@@ -34,6 +34,9 @@ want to specify a height for the container.
 .slide {
     grid-row: 1;
     grid-column: 1;
+    &-title {
+        position: absolute;
+    }
 }
 
 // Just styling for the demo, none of this is needed for functionality.
