@@ -27,6 +27,7 @@
             left: 5vw;
             height: 5vh;
         }
+        &-3 {}
     }
     .mobil {
         position: absolute;
@@ -56,6 +57,18 @@
                 height: auto;
                 bottom: 8vh;
             }
+        }
+        &-3 {
+            width: 280px;
+            height: auto;
+            right: 10vw;
+            top: 60vh;
+        }
+        &-4 {
+            width: 200px;
+            right: 0;
+            height: auto;
+            bottom: 2vh;
         }
     }
     .imagex {
