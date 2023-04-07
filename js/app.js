@@ -55,7 +55,7 @@ tl.from(".title", {
         duration: 1
     })
     .from(
-        "[data-slide='2'] .image88, [data-slide='2'] .slide-title", {
+        "[data-slide='2'] .image88, [data-slide='2'] .slide-title, [data-slide='2'] .image-peta", {
             opacity: 0,
             duration: 1,
             scale: 0.75
@@ -78,12 +78,12 @@ tl.from(".title", {
         },
         "+=10"
     )
-    .to("[data-slide='2'] .image88, [data-slide='2'] .slide-title", {
+    .to("[data-slide='2'] .image88, [data-slide='2'] .slide-title, [data-slide='2'] .image-peta", {
         opacity: 0,
         duration: 1
     })
     .from(
-        "[data-slide='3'] .image88, [data-slide='3'] .slide-title", {
+        "[data-slide='3'] .image88, [data-slide='3'] .slide-title, [data-slide='3'] .image-peta", {
             opacity: 0,
             duration: 1,
             scale: 0.75
@@ -106,7 +106,7 @@ tl.from(".title", {
         },
         "+=10"
     )
-    .to("[data-slide='3'] .image88, [data-slide='3'] .slide-title", {
+    .to("[data-slide='3'] .image88, [data-slide='3'] .slide-title, [data-slide='3'] .image-peta", {
         opacity: 0,
         duration: 1
     });
