@@ -36,6 +36,7 @@ want to specify a height for the container.
     grid-column: 1;
     &-title {
         position: absolute;
+        bottom: -15vh;
     }
 }
 
@@ -151,9 +152,14 @@ section {
     right: 0;
     &.trans {
         opacity: .2;
+        left: 7vw;
+        bottom: 60vh;
+        @media screen and (max-width:766px) {
+            bottom: 15vh;
+            left: initial;
+            transform: scale(1.5);
+        }
         z-index: 1;
-        bottom: 15vh;
-        transform: scale(1.5);
     }
     &.top {
         // z-index: 9;

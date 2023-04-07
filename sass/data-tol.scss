@@ -1,0 +1,29 @@
+.data-tol {
+    .box {
+        position: relative;
+        width:100%;
+        min-height: 100vh;
+        padding: 100px;
+      }
+      
+      .box h2 {
+        font-size: 2.5rem;
+      }
+      
+      .box img {
+        max-width: 300px;
+      }
+      
+      .box2 {
+        position: relative;
+        width:100%;
+        min-height: 100vh;
+        padding: 100px;
+        background: #000;
+      }
+      
+      .box2 h2 {
+        font-size: 2.5rem;
+        color: #fff;
+      }
+}
