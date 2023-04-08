@@ -1,0 +1,26 @@
+.tol-angka {
+    // overflow-x: initial;
+
+    .judul {
+        font-size: 3rem;
+        position: sticky;
+        top: 10vh;
+
+        @media screen and (max-width:766px) {
+            font-size: 2rem;
+        }
+    }
+
+    .alls {
+        .juduls {
+            font-size: 2rem;
+        }
+
+        .angka {
+            font-size: 4rem;
+        }
+    }
+
+
+
+}
