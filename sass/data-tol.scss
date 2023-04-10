@@ -2,7 +2,7 @@
     background: #c7efe7;
     @media screen and (max-width: 766px) {
         // background: #bdebee;
-        background: linear-gradient(to bottom, #c7efe7, #bdebee);
+        // background: linear-gradient(to bottom, #c7efe7, #bdebee);
     }
     .image-awan {
         position: absolute;
@@ -51,7 +51,8 @@
         border-bottom: 2px solid;
         padding: 16px 0;
     }
-    .text2 {
+    .text2,
+    .text4 {
         font-size: 2rem;
         display: inline-block;
         // font-family: 'Bebas Neue';
@@ -60,6 +61,12 @@
         @media screen and (max-width: 766px) {
             font-size: 1.5rem;
         }
+    }
+    .font-3 {
+        font-size: 3.5rem;
+        display: inline-block;
+        font-weight: bold;
+        width: 35%;
     }
     .text3 {
         display: inline-block;
@@ -73,6 +80,8 @@
         width: 100%;
         min-height: 100vh;
         padding: 32px;
+        background: linear-gradient(to bottom, #c7efe7, #bdebee);
+        // background: linear-gradient(to bottom, #c7efe7, #bdebee);
         @media screen and (max-width: 766px) {
             padding: 24px;
         }
@@ -90,10 +99,13 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        padding: 100px;
+        padding: 32px;
         // background: #000;
         // background: #43a85c;
         background: linear-gradient(to bottom, #c7efe7, #bdebee);
+        @media screen and (max-width: 766px) {
+            padding: 24px;
+        }
     }
     .box2 h2 {
         font-size: 3.5rem;
