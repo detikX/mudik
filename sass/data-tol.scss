@@ -43,14 +43,123 @@
         left: 0;
         bottom: 0;
         right: 0;
+        @keyframes MoveUpDown {
+            0% {
+                left: 10%;
+                bottom: 26%;
+                opacity: 0;
+                transform: scale(1);
+            }
+            15% {
+                left: 10%;
+                bottom: 26%;
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                left: 10%;
+                bottom: 16%;
+                opacity: 1;
+                transform: scale(1.1);
+            }
+            70% {
+                left: 10%;
+                bottom: 10%;
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            85% {
+                left: 10%;
+                bottom: 5%;
+                opacity: 1;
+                transform: scale(1.5);
+            }
+            90% {
+                left: 10%;
+                bottom: 1%;
+                opacity: .5;
+                transform: scale(1.5);
+            }
+            100% {
+                left: 10%;
+                bottom: 0%;
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+        @keyframes MoveTo {
+            0% {
+                left: 35%;
+                bottom: 16%;
+                opacity: 0;
+                transform: scale(1.5);
+            }
+            15% {
+                left: 35%;
+                bottom: 16%;
+                opacity: 1;
+                transform: scale(1.5);
+            }
+            50% {
+                left: 35%;
+                bottom: 26%;
+                opacity: 1;
+                transform: scale(1.4);
+            }
+            70% {
+                left: 35%;
+                bottom: 30%;
+                opacity: 1;
+                transform: scale(1.2);
+            }
+            85% {
+                left: 35%;
+                bottom: 35%;
+                opacity: 1;
+                transform: scale(1);
+            }
+            90% {
+                left: 35%;
+                bottom: 35%;
+                opacity: .5;
+                transform: scale(1);
+            }
+            100% {
+                left: 35%;
+                bottom: 35%;
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
         &_merah {
             position: absolute;
             bottom: 26%;
             left: 10%;
             width: 150px;
             height: auto;
+            animation: MoveUpDown 4s linear infinite;
+            transition: transform .2s;
+            transform: scale(1);
             @media screen and (max-width: 766px) {
                 display: none;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &_biru {
+            position: absolute;
+            bottom: 16%;
+            left: 35%;
+            width: 150px;
+            height: auto;
+            animation: MoveTo 4s linear infinite;
+            transition: transform .2s;
+            transform: scale(1.5);
+            @media screen and (max-width: 766px) {
+                width: 60px;
             }
             img {
                 width: 100%;
