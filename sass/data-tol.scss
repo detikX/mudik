@@ -201,7 +201,7 @@
         width: 60%;
         vertical-align: middle;
         @media screen and (max-width: 766px) {
-            font-size: 1.5rem;
+            font-size: 1.7rem;
         }
     }
     .font-3 {
@@ -209,6 +209,14 @@
         display: inline-block;
         font-weight: bold;
         width: 35%;
+        @media screen and (max-width: 766px) {
+            display: inline-block;
+            width: 35%;
+            text-align: right;
+            font-weight: 700;
+            vertical-align: middle;
+            font-size: 3.15rem;
+        }
     }
     .text3 {
         display: inline-block;
@@ -216,6 +224,14 @@
         font-weight: 700;
         vertical-align: middle;
         font-size: 3.5rem;
+        @media screen and (max-width: 766px) {
+            display: inline-block;
+            width: 35%;
+            text-align: right;
+            font-weight: 700;
+            vertical-align: middle;
+            font-size: 3.15rem;
+        }
     }
     .box {
         position: relative;
