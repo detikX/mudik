@@ -1,5 +1,22 @@
 .data-tol {
-    background: #c7efe7;
+    // background: #c7efe7;
+    // background: #5e5e5e;
+    background: linear-gradient(to bottom, #c7efe7, #5e5e5e);
+    .image-awanz {
+        position: absolute;
+        /* top: 0; */
+        left: 0;
+        right: 0;
+        z-index: 9;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
     @media screen and (max-width: 766px) {
         // background: #bdebee;
         // background: linear-gradient(to bottom, #c7efe7, #bdebee);
@@ -89,8 +106,9 @@
     .box h2 {
         font-size: 3.5rem;
         line-height: 3.2rem;
+        color: #f8be4d;
         font-family: 'Kanit';
-        text-shadow: 2px 2px #fcfcfc;
+        text-shadow: 2px 2px #000;
     }
     .box img {
         max-width: 300px;
@@ -102,7 +120,8 @@
         padding: 32px;
         // background: #000;
         // background: #43a85c;
-        background: linear-gradient(to bottom, #c7efe7, #bdebee);
+        // background: linear-gradient(to bottom, #c7efe7, #bdebee);
+        background: #82cdd4;
         @media screen and (max-width: 766px) {
             padding: 24px;
         }
