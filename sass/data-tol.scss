@@ -185,7 +185,7 @@
             transition: transform .2s;
             transform: scale(1);
             @media screen and (max-width: 766px) {
-                width: 80px;
+                width: 50px;
                 bottom: 30%;
                 animation: MoveUpDownMob 4s linear infinite;
             }
