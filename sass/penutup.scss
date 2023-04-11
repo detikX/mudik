@@ -8,8 +8,26 @@
     position: relative;
     padding-bottom: 42px;
     background: white;
+    .tes {
+        position: absolute;
+        // left: 0;
+        bottom: 5%;
+        right: 15%;
+        transform: rotate(-90deg);
+        width: 50px;
+        opacity: .9;
+        height: auto;
+        z-index: 9;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
     .judul {
         font-size: 3.5rem;
+        color: #a8f87e;
+        text-shadow: 1px 2px black;
         @media screen and (max-width: 766px) {
             font-size: 2rem;
         }
