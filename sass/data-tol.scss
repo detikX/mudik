@@ -131,6 +131,50 @@
                 transform: scale(1.5);
             }
         }
+        @keyframes MoveUpDownMobH {
+            0% {
+                left: 40%;
+                bottom: 40%;
+                opacity: 0;
+                transform: scale(.5);
+            }
+            15% {
+                left: 40%;
+                bottom: 40%;
+                opacity: 1;
+                transform: scale(.7);
+            }
+            50% {
+                left: 40%;
+                bottom: 38%;
+                opacity: 1;
+                transform: scale(.7);
+            }
+            70% {
+                left: 40%;
+                bottom: 38%;
+                opacity: 1;
+                transform: scale(.8);
+            }
+            85% {
+                left: 40%;
+                bottom: 37%;
+                opacity: 1;
+                transform: scale(1);
+            }
+            90% {
+                left: 40%;
+                bottom: 36%;
+                opacity: .5;
+                transform: scale(1);
+            }
+            100% {
+                left: 40%;
+                bottom: 36%;
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
         @keyframes MoveTo {
             0% {
                 left: 35%;
@@ -188,6 +232,27 @@
                 width: 50px;
                 bottom: 30%;
                 animation: MoveUpDownMob 4s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &_hijau {
+            position: absolute;
+            bottom: 56%;
+            left: 40%;
+            width: 150px;
+            height: auto;
+            // animation: MoveUpDown 4s linear infinite;
+            transition: transform .2s;
+            // transform: scale(1);
+            @media screen and (max-width: 766px) {
+                width: 50px;
+                bottom: 40%;
+                transform: scale(.5);
+                animation: MoveUpDownMobH 4s linear infinite;
             }
             img {
                 width: 100%;
