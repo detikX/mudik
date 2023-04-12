@@ -130,10 +130,14 @@ $(".to-peta").click(function() {
         600);
 })
 
-$("#baru-jawa-table").hide()
-$("#fungsi-jawa-table").hide()
+// $("#baru-jawa-table").hide()
+// $("#fungsi-jawa-table").hide()
+$("#biru-jawa").hide();
+$("#biru-jawa-angka").hide();
 $("#baru-jawa").click(function() {
     $("#baru-jawa-table").fadeToggle();
+    $("#biru-jawa").fadeToggle();
+    $("#biru-jawa-angka").fadeToggle('200');
 })
 $("#fungsi-jawa").click(function() {
     $("#fungsi-jawa-table").fadeToggle();

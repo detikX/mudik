@@ -4,12 +4,16 @@
     min-height: auto;
     .data {
         display: inline-block;
-        background: rgba($color: red, $alpha: .3);
         padding: 4px;
         // border: 1px solid;
         width: 32%;
+        background: rgba($color: #00b15c, $alpha: .2);
+        &.bg-smooth {
+            background: rgba($color: #00b15c, $alpha: .085);
+        }
         .tanggal {
             font-weight: bold;
+            margin-right: 2px;
         }
         .tanggal,
         .jam {
