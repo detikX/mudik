@@ -143,6 +143,7 @@
         }
         @media screen and (max-width: 766px) {
             width: auto;
+            z-index: 99;
             height: 240px;
             overflow: scroll;
         }
