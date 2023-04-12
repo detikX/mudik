@@ -148,4 +148,9 @@ $("#baru-jawa").click(function() {
 })
 $("#fungsi-jawa").click(function() {
     // $("#fungsi-jawa-table").fadeToggle();
+    setTimeout(function() {
+        $('html, body').animate({
+            scrollTop: $("#fungsi-jawa-table").offset().top
+        }, 2000);
+    }, 2000)
 })
