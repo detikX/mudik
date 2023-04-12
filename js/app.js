@@ -135,7 +135,7 @@ $(".to-peta").click(function() {
 $("#biru-jawa").hide();
 $("#biru-jawa-angka").hide();
 $("#baru-jawa").click(function() {
-    $("#baru-jawa-table").fadeToggle();
+    // $("#baru-jawa-table").fadeToggle();
     $("#biru-jawa").fadeToggle();
     $("#biru-jawa-angka").fadeToggle('200');
 })
