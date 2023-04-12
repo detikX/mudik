@@ -129,3 +129,12 @@ $(".to-peta").click(function() {
         },
         600);
 })
+
+$("#baru-jawa-table").hide()
+$("#fungsi-jawa-table").hide()
+$("#baru-jawa").click(function() {
+    $("#baru-jawa-table").fadeToggle();
+})
+$("#fungsi-jawa").click(function() {
+    $("#fungsi-jawa-table").fadeToggle();
+})

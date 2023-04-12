@@ -2,9 +2,87 @@
     background: #f8f8f8;
     position: relative;
     min-height: auto;
+    .data {
+        display: inline-block;
+        background: rgba($color: red, $alpha: .3);
+        padding: 4px;
+        // border: 1px solid;
+        width: 32%;
+        .tanggal {
+            font-weight: bold;
+        }
+        .tanggal,
+        .jam {
+            display: inline-block;
+            width: 46%;
+            font-size: .7rem;
+        }
+    }
     .image {
         width: 100%;
+        position: relative;
         height: auto;
+        @keyframes MoveUpDownMob {
+            0% {
+                left: 42%;
+                bottom: 15%;
+                opacity: 0;
+                transform: scale(1);
+            }
+            15% {
+                left: 42%;
+                bottom: 15%;
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                left: 42%;
+                bottom: 12%;
+                opacity: 1;
+                transform: scale(1.3);
+            }
+            70% {
+                left: 42%;
+                bottom: 6%;
+                opacity: 1;
+                transform: scale(1.5);
+            }
+            85% {
+                left: 42%;
+                bottom: 2%;
+                opacity: 1;
+                transform: scale(1.5);
+            }
+            90% {
+                left: 42%;
+                bottom: 2%;
+                opacity: .5;
+                transform: scale(1.5);
+            }
+            100% {
+                left: 42%;
+                bottom: 0%;
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+        &__gogo {
+            position: absolute;
+            transform: scale(1);
+            width: 200px;
+            left: 30%;
+            @media screen and (max-width: 766px) {
+                width: 50px;
+                left: 42%;
+                bottom: 15%;
+                animation: MoveUpDownMob 4s linear infinite;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
         img {
             width: 100%;
             height: 100%;

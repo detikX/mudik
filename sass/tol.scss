@@ -5,7 +5,8 @@
     // background: #2f8bcc;
     .btn {
         box-shadow: 1px 2px 6px #bbb;
-        margin: 0 4px;
+        margin: 4px 2px;
+        padding: 2px 4px;
     }
     &::before {
         content: "";
@@ -179,6 +180,12 @@
             margin-bottom: 0;
             td {
                 border-top: 1px solid transparent;
+                // &:first-child {
+                //     width: 3%;
+                // }
+                // &:nth-child(2) {
+                //     width: 80%;
+                // }
                 &:last-child {
                     font-weight: bold;
                 }
