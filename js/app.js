@@ -138,6 +138,13 @@ $("#baru-jawa").click(function() {
     // $("#baru-jawa-table").fadeToggle();
     $("#biru-jawa").fadeToggle();
     $("#biru-jawa-angka").fadeToggle('200');
+
+    setTimeout(function() {
+        $('html, body').animate({
+            scrollTop: $("#baru-jawa-table").offset().top
+        }, 2000);
+    }, 2000)
+
 })
 $("#fungsi-jawa").click(function() {
     $("#fungsi-jawa-table").fadeToggle();
