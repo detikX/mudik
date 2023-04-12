@@ -134,23 +134,27 @@ $(".to-peta").click(function() {
 // $("#fungsi-jawa-table").hide()
 $("#biru-jawa").hide();
 $("#biru-jawa-angka").hide();
+$("#kuning-jawa-angka").hide();
+$("#kuning-jawa").hide();
 $("#baru-jawa").click(function() {
     // $("#baru-jawa-table").fadeToggle();
     $("#biru-jawa").fadeToggle();
     $("#biru-jawa-angka").fadeToggle('200');
 
-    setTimeout(function() {
-        $('html, body').animate({
-            scrollTop: $("#baru-jawa-table").offset().top
-        }, 2000);
-    }, 2000)
+    // setTimeout(function() {
+    //     $('html, body').animate({
+    //         scrollTop: $("#baru-jawa-table").offset().top
+    //     }, 2000);
+    // }, 2000)
 
 })
 $("#fungsi-jawa").click(function() {
     // $("#fungsi-jawa-table").fadeToggle();
-    setTimeout(function() {
-        $('html, body').animate({
-            scrollTop: $("#fungsi-jawa-table").offset().top
-        }, 2000);
-    }, 2000)
+    $("#kuning-jawa").fadeToggle();
+    $("#kuning-jawa-angka").fadeToggle();
+    // setTimeout(function() {
+    //     $('html, body').animate({
+    //         scrollTop: $("#fungsi-jawa-table").offset().top
+    //     }, 2000);
+    // }, 2000)
 })
