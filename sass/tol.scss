@@ -1,7 +1,12 @@
 .tol {
     position: relative;
-    background: linear-gradient(to bottom, #2f8bcc, white);
+    // background: linear-gradient(to bottom, #2f8bcc, white);
+    background: linear-gradient(to bottom, #2f8bcc, #d0efff);
     // background: #2f8bcc;
+    .btn {
+        box-shadow: 1px 2px 6px #bbb;
+        margin: 0 4px;
+    }
     &::before {
         content: "";
         position: absolute;
