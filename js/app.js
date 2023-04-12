@@ -147,5 +147,5 @@ $("#baru-jawa").click(function() {
 
 })
 $("#fungsi-jawa").click(function() {
-    $("#fungsi-jawa-table").fadeToggle();
+    // $("#fungsi-jawa-table").fadeToggle();
 })
