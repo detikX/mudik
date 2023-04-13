@@ -91,37 +91,37 @@
         @keyframes MoveUpDownMob {
             0% {
                 left: 42%;
-                bottom: 15%;
+                bottom: 8%;
                 opacity: 0;
                 transform: scale(1);
             }
             15% {
                 left: 42%;
-                bottom: 15%;
+                bottom: 8%;
                 opacity: 1;
                 transform: scale(1);
             }
             50% {
                 left: 42%;
-                bottom: 12%;
+                bottom: 5%;
                 opacity: 1;
                 transform: scale(1.3);
             }
             70% {
                 left: 42%;
-                bottom: 6%;
+                bottom: 3%;
                 opacity: 1;
                 transform: scale(1.5);
             }
             85% {
                 left: 42%;
-                bottom: 2%;
+                bottom: 1%;
                 opacity: 1;
                 transform: scale(1.5);
             }
             90% {
                 left: 42%;
-                bottom: 2%;
+                bottom: 1%;
                 opacity: .5;
                 transform: scale(1.5);
             }
@@ -142,7 +142,7 @@
             @media screen and (max-width: 766px) {
                 width: 50px;
                 left: 42%;
-                bottom: 15%;
+                bottom: 8%;
                 animation: MoveUpDownMob 4s linear infinite;
             }
             img {
