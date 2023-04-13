@@ -1,5 +1,6 @@
 .credit {
-    background: #d8ffc3;
+    // background: #d8ffc3;
+    background: #4e565d;
     position: relative;
     min-height: 70vh;
     @media screen and (max-width: 766px) {
@@ -8,6 +9,7 @@
     .imagec {
         width: 100%;
         height: auto;
+        // opacity: .4;
         img {
             width: 100%;
             height: 100%;
@@ -17,6 +19,7 @@
     .bg {
         position: absolute;
         bottom: 0;
+        opacity: .4;
         left: 0;
         right: 0;
         width: 100%;
@@ -36,7 +39,7 @@
             position: absolute;
             right: 0;
             height: 50vh;
-            background: linear-gradient(to top, transparent, #d8ffc3);
+            background: linear-gradient(to top, transparent, #4e565d);
         }
         img {
             width: 100%;
@@ -48,11 +51,12 @@
         margin-bottom: 8px;
         .titlex {
             font-size: 1rem;
-            color: #4a4a4a;
+            color: #fcfcfc;
         }
         .name {
             font-weight: bold;
             font-size: 1.2rem;
+            color: white;
         }
     }
 }

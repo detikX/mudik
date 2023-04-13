@@ -2,14 +2,14 @@
     background: #f8f8f8;
     // background: linear-gradient(to bottom, white, black);
     position: relative;
-    min-height: auto;
+    min-height: 60vh;
     &::before {
         content: "";
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
-        height: 20rem;
+        height: 10rem;
         background: #4e565d;
     }
     .d-block {
