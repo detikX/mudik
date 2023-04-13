@@ -371,19 +371,28 @@
     }
     .text2,
     .text4 {
-        font-size: 2rem;
         display: inline-block;
         width: 60%;
-        text-align: center;
         font-weight: 700;
         vertical-align: middle;
+        font-size: 2rem;
+        text-align: left;
+        @media screen and (max-width:766px) {
+        text-align: center;
+            
+        }
+        
         .cek {
             width: 80px;
             height: 80px;
             margin: 0 auto;
-            text-align: center;
             padding: 8px;
+            display: inline-block;
             border-radius: 50%;
+            @media screen and (max-width:766px) {
+                display: block;
+                text-align: center;
+            }
             background: rgba($color: white, $alpha: .6);
             img {
                 width: 100%;
@@ -480,13 +489,14 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        text-align: center;
         padding: 32px;
+        text-align: left;
         // background: #000;
         // background: #43a85c;
         // background: linear-gradient(to bottom, #c7efe7, #bdebee);
         background: #82cdd4;
         @media screen and (max-width: 766px) {
+            text-align: center;
             padding: 32px 8px;
         }
     }
@@ -510,5 +520,10 @@
                 font-size: 2.8rem;
             }
         }
+    }
+
+    .bg-whites {
+        background: rgba(255,255,255,.3);
+        position: relative;
     }
 }
