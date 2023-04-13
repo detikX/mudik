@@ -269,4 +269,29 @@
             }
         }
     }
+    .keterangan {
+        .f12 {
+            font-size: 12px;
+        }
+        .merah {
+            width: 30px;
+            height: 10px;
+            background: #cc0a0d;
+        }
+        .hijau {
+            width: 30px;
+            height: 10px;
+            background: #77c000;
+        }
+        .biru {
+            width: 30px;
+            height: 10px;
+            background: #2980e9;
+        }
+        .kuning {
+            width: 30px;
+            height: 10px;
+            background: #f2bb04;
+        }
+    }
 }
