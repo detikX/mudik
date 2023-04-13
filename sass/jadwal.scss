@@ -23,9 +23,10 @@
         text-align: center;
         // border: 1px solid;
         width: 32%;
-        // background: rgba($color: #00b15c, $alpha: .2);
+        background: rgba($color: #fff, $alpha: .2);
+        border-radius: 8px;
         &.bg-smooth {
-            // background: rgba($color: #00b15c, $alpha: .085);
+            background: rgba($color: #fff, $alpha: .085);
         }
         .tanggal {
             font-weight: bold;
