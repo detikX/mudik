@@ -2,7 +2,7 @@
     background: #f8f8f8;
     // background: linear-gradient(to bottom, white, black);
     position: relative;
-    // min-height: 60vh;
+    min-height: 50vh;
     &::before {
         content: "";
         position: absolute;
@@ -10,7 +10,7 @@
         left: 0;
         right: 0;
         /* z-index: 9; */
-        height: 80vh;
+        height: 35vh;
         background: #4e565d;
     }
     .d-block {
