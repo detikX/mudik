@@ -123,12 +123,20 @@ $('.kategori-item').click(function(event) {
     $(toShow).fadeIn();
 });
 
+$('.kategori-itemx').click(function(event) {
+    var id = $(this).attr('data-id');
+    var toShow = '.showx-' + id;
 
-// $("#baru-jawa-table").hide()
-// $("#fungsi-jawa-table").hide()
-//     // $("#biru-jawa").hide();
-// $("#biru-jawa-angka").hide();
-// $("#kuning-jawa-angka").hide();
+    $('.dashboard-contentx').not(toShow).hide();
+    $(toShow).fadeIn();
+});
+
+
+$("#baru-jawa-table").hide()
+$("#fungsi-jawa-table").hide()
+    //     // $("#biru-jawa").hide();
+$("#biru-jawa-angka").hide();
+$("#kuning-jawa-angka").hide();
 // $("#kuning-jawa").hide();
 // $("#baru-jawa").click(function() {
 //     $("#baru-jawa-table").fadeToggle();
@@ -142,16 +150,16 @@ $('.kategori-item').click(function(event) {
 //     // }, 2000)
 
 // })
-$("#fungsi-jawa").click(function() {
-    $("#fungsi-jawa-table").fadeToggle();
-    // $("#kuning-jawa").fadeToggle();
-    $("#kuning-jawa-angka").fadeToggle();
-    // setTimeout(function() {
-    //     $('html, body').animate({
-    //         scrollTop: $("#fungsi-jawa-table").offset().top
-    //     }, 2000);
-    // }, 2000)
-})
+// $("#fungsi-jawa").click(function() {
+//     $("#fungsi-jawa-table").fadeToggle();
+//     // $("#kuning-jawa").fadeToggle();
+//     $("#kuning-jawa-angka").fadeToggle();
+//     // setTimeout(function() {
+//     //     $('html, body').animate({
+//     //         scrollTop: $("#fungsi-jawa-table").offset().top
+//     //     }, 2000);
+//     // }, 2000)
+// })
 
 
 $("#sumut-no-kuning").hide()
