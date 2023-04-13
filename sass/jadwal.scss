@@ -1,8 +1,17 @@
 .jadwal {
-    // background: #f8f8f8;
-    background: linear-gradient(to bottom, white, black);
+    background: #f8f8f8;
+    // background: linear-gradient(to bottom, white, black);
     position: relative;
     min-height: auto;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 20rem;
+        background: #4e565d;
+    }
     .d-block {
         margin: 0 auto;
         text-align: center;
@@ -14,34 +23,27 @@
         // border: 1px solid;
         width: 32%;
         background: rgba($color: #00b15c, $alpha: .2);
-
         &.bg-smooth {
             background: rgba($color: #00b15c, $alpha: .085);
         }
-
         .tanggal {
             font-weight: bold;
             margin-right: 2px;
         }
-
         .tanggal,
         .jam {
             display: inline-block;
             width: 46%;
             font-size: 1.2rem;
-
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 font-size: .7rem;
-
             }
         }
     }
-
     .image {
         width: 100%;
         position: relative;
         height: auto;
-
         @keyframes MoveUpDown {
             0% {
                 left: 42%;
@@ -49,42 +51,36 @@
                 opacity: 0;
                 transform: scale(1);
             }
-
             15% {
                 left: 42%;
                 bottom: 15%;
                 opacity: 1;
                 transform: scale(1);
             }
-
             50% {
                 left: 42%;
                 bottom: 12%;
                 opacity: 1;
                 transform: scale(1.1);
             }
-
             70% {
                 left: 42%;
                 bottom: 8%;
                 opacity: 1;
                 transform: scale(1.2);
             }
-
             85% {
                 left: 42%;
                 bottom: 5%;
                 opacity: 1;
                 transform: scale(1.5);
             }
-
             90% {
                 left: 42%;
                 bottom: 1%;
                 opacity: .5;
                 transform: scale(1.5);
             }
-
             100% {
                 left: 42%;
                 bottom: 0%;
@@ -92,7 +88,6 @@
                 transform: scale(1.5);
             }
         }
-
         @keyframes MoveUpDownMob {
             0% {
                 left: 42%;
@@ -100,42 +95,36 @@
                 opacity: 0;
                 transform: scale(1);
             }
-
             15% {
                 left: 42%;
                 bottom: 15%;
                 opacity: 1;
                 transform: scale(1);
             }
-
             50% {
                 left: 42%;
                 bottom: 12%;
                 opacity: 1;
                 transform: scale(1.3);
             }
-
             70% {
                 left: 42%;
                 bottom: 6%;
                 opacity: 1;
                 transform: scale(1.5);
             }
-
             85% {
                 left: 42%;
                 bottom: 2%;
                 opacity: 1;
                 transform: scale(1.5);
             }
-
             90% {
                 left: 42%;
                 bottom: 2%;
                 opacity: .5;
                 transform: scale(1.5);
             }
-
             100% {
                 left: 42%;
                 bottom: 0%;
@@ -143,7 +132,6 @@
                 transform: scale(1.5);
             }
         }
-
         &__gogo {
             position: absolute;
             transform: scale(1);
@@ -151,21 +139,18 @@
             bottom: 10%;
             left: 42%;
             animation: MoveUpDown 4s linear infinite;
-
             @media screen and (max-width: 766px) {
                 width: 50px;
                 left: 42%;
                 bottom: 15%;
                 animation: MoveUpDownMob 4s linear infinite;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         img {
             width: 100%;
             height: 100%;
