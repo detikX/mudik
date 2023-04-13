@@ -158,3 +158,30 @@ $("#fungsi-jawa").click(function() {
     //     }, 2000);
     // }, 2000)
 })
+
+
+$("#sumut-garis-kuning").hide()
+$("#sumut-garis-biru").hide()
+$("#sumut-no-kuning").hide()
+$("#sumut-no-biru").hide()
+$("#sumut-baru").click(function() {
+    // $("#baru-jawa-table").fadeToggle();
+    $("#sumut-garis-biru").fadeToggle();
+    $("#sumut-no-biru").fadeToggle('200');
+
+    // setTimeout(function() {
+    //     $('html, body').animate({
+    //         scrollTop: $("#baru-jawa-table").offset().top
+    //     }, 2000);
+    // }, 2000)
+
+})
+$("#sumut-fungsi").click(function() {
+    // $("#fungsi-jawa-table").fadeToggle();
+    $("#sumut-garis-kuning").fadeToggle();
+    $("#sumut-no-kuning").fadeToggle('200'); // setTimeout(function() {
+    //     $('html, body').animate({
+    //         scrollTop: $("#fungsi-jawa-table").offset().top
+    //     }, 2000);
+    // }, 2000)
+})
