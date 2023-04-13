@@ -3,10 +3,14 @@
     background: linear-gradient(to bottom, white, black);
     position: relative;
     min-height: auto;
-
+    .d-block {
+        margin: 0 auto;
+        text-align: center;
+    }
     .data {
         display: inline-block;
         padding: 4px;
+        text-align: center;
         // border: 1px solid;
         width: 32%;
         background: rgba($color: #00b15c, $alpha: .2);
