@@ -123,22 +123,16 @@ $('.kategori-item').click(function(event) {
     $(toShow).fadeIn();
 });
 
-$(".to-peta").click(function() {
-    $('html,body').animate({
-            scrollTop: $(".mapsx").offset().top
-        },
-        600);
-})
 
-// $("#baru-jawa-table").hide()
-// $("#fungsi-jawa-table").hide()
-$("#biru-jawa").hide();
+$("#baru-jawa-table").hide()
+$("#fungsi-jawa-table").hide()
+    // $("#biru-jawa").hide();
 $("#biru-jawa-angka").hide();
 $("#kuning-jawa-angka").hide();
-$("#kuning-jawa").hide();
+// $("#kuning-jawa").hide();
 $("#baru-jawa").click(function() {
-    // $("#baru-jawa-table").fadeToggle();
-    $("#biru-jawa").fadeToggle();
+    $("#baru-jawa-table").fadeToggle();
+    // $("#biru-jawa").fadeToggle();
     $("#biru-jawa-angka").fadeToggle('200');
 
     // setTimeout(function() {
@@ -149,8 +143,8 @@ $("#baru-jawa").click(function() {
 
 })
 $("#fungsi-jawa").click(function() {
-    // $("#fungsi-jawa-table").fadeToggle();
-    $("#kuning-jawa").fadeToggle();
+    $("#fungsi-jawa-table").fadeToggle();
+    // $("#kuning-jawa").fadeToggle();
     $("#kuning-jawa-angka").fadeToggle();
     // setTimeout(function() {
     //     $('html, body').animate({
@@ -160,25 +154,26 @@ $("#fungsi-jawa").click(function() {
 })
 
 
-$("#sumut-garis-kuning").hide()
-$("#sumut-garis-biru").hide()
+// $("#sumut-garis-kuning").hide()
+// $("#sumut-garis-biru").hide()
 $("#sumut-no-kuning").hide()
 $("#sumut-no-biru").hide()
 $("#sumut-baru").click(function() {
-    // $("#baru-jawa-table").fadeToggle();
-    $("#sumut-garis-biru").fadeToggle();
-    $("#sumut-no-biru").fadeToggle('200');
+        $("#baru-jawa-table").fadeToggle();
+        // $("#sumut-garis-biru").fadeToggle();
+        $("#sumut-no-biru").fadeToggle('200');
 
-    // setTimeout(function() {
-    //     $('html, body').animate({
-    //         scrollTop: $("#baru-jawa-table").offset().top
-    //     }, 2000);
-    // }, 2000)
+        // setTimeout(function() {
+        //     $('html, body').animate({
+        //         scrollTop: $("#baru-jawa-table").offset().top
+        //     }, 2000);
+        // }, 2000)
 
-})
+    })
+    // $("#sumut-table").hide()
 $("#sumut-fungsi").click(function() {
-    // $("#fungsi-jawa-table").fadeToggle();
-    $("#sumut-garis-kuning").fadeToggle();
+    $("#fungsi-sumut-table").fadeToggle();
+    // $("#sumut-garis-kuning").fadeToggle();
     $("#sumut-no-kuning").fadeToggle('200'); // setTimeout(function() {
     //     $('html, body').animate({
     //         scrollTop: $("#fungsi-jawa-table").offset().top
