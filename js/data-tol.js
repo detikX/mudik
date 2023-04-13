@@ -59,4 +59,4 @@ const obj = document.getElementById("value");
 animateValue(obj, 1300, 2860, 20000);
 
 const obj1 = document.getElementById("value1");
-animateValue(obj1, 1300, 2860, 20000);
+animateValue(obj1, 0, 70, 20000);

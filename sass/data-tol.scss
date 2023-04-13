@@ -384,7 +384,8 @@
         display: inline-block;
         font-weight: bold;
         width: 35%;
-        color: #ffc107;
+        // color: #ffc107;
+        color: #fff;
         text-shadow: 1px 1px black;
         text-align: right;
         @media screen and (max-width: 766px) {
@@ -403,7 +404,8 @@
         width: 35%;
         font-weight: 700;
         text-align: right;
-        color: #ffc107;
+        // color: #ffc107;
+        color: #fff;
         text-shadow: 1px 1px black;
         vertical-align: middle;
         font-size: 3.5rem;
