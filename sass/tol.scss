@@ -256,3 +256,10 @@
         }
     }
 }
+
+.namaa {
+    top: 40px;
+    @media screen and (max-width:766px) {
+        top: 20px;
+    }
+}
