@@ -2,21 +2,18 @@
     position: relative;
     // background: linear-gradient(to bottom, #2f8bcc, white);
     background: linear-gradient(to bottom, #2f8bcc, #d0efff);
-
     // background: #2f8bcc;
     .btn {
         box-shadow: 1px 2px 6px #bbb;
         margin: 4px 2px;
         padding: 2px 4px;
     }
-
     &::before {
         content: "";
         position: absolute;
         inset: 0;
         // background: linear-gradient(to top, #db9c31, transparent);
     }
-
     .datanya {
         h3 {
             color: white;
@@ -25,7 +22,6 @@
             margin-bottom: 8px;
         }
     }
-
     .keluar {
         position: absolute;
         bottom: 0;
@@ -33,23 +29,19 @@
         right: 0;
         width: 100vw;
         height: auto;
-
         &::before {
             content: "";
             position: absolute;
             inset: 0;
             background: linear-gradient(to top, transparent, #2f8bcc);
         }
-
         @media screen and (max-wdith:766px) {}
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
     }
-
     .awan {
         position: absolute;
         z-index: 99;
@@ -58,44 +50,36 @@
         left: 0;
         width: 100%;
         height: auto;
-
         @media screen and (max-width: 766px) {
             top: -36px;
         }
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     .judul {
         h2 {
             font-size: 4rem;
             color: white;
             font-family: 'Kanit';
             text-shadow: 2px 2px black;
-
             // font-weight: 700;
             @media screen and (max-width: 766px) {
                 font-size: 2.5rem;
             }
         }
     }
-
     @keyframes MovePeta {
-
         0%,
         100% {
             left: 0%;
         }
-
         50% {
             left: 3%;
         }
     }
-
     .image {
         width: 100%;
         height: 460px;
@@ -103,7 +87,6 @@
         // animation: MovePeta 2.5s linear infinite;
         position: relative;
         overflow: auto;
-
         .mobild {
             position: absolute;
             right: 13vw;
@@ -112,19 +95,16 @@
             height: auto;
             z-index: 9;
             transform: rotate(-46deg);
-
             @media screen and (max-width: 766px) {
                 right: 12%;
                 bottom: 11%;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         .mobilj {
             position: absolute;
             left: 13vw;
@@ -132,28 +112,24 @@
             width: 50px;
             height: auto;
             z-index: 9;
-
             // transform: rotate(-46deg);
             @media screen and (max-width: 766px) {
                 left: 12%;
                 top: 32%;
                 width: 36px;
             }
-
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
-
         &__gambar,
         &__garis {
             position: absolute;
             inset: 0;
             width: 100%;
             height: 100%;
-
             // @media screen and (max-width: 766px) {
             //     overflow: scroll;
             // }
@@ -163,23 +139,19 @@
                 object-fit: cover;
             }
         }
-
         &__garis {
             z-index: 8;
         }
-
         @media screen and (max-width: 766px) {
             width: auto;
             z-index: 99;
             height: 240px;
             overflow: scroll;
         }
-
         img {
             width: 200%;
             height: 200%;
             object-fit: cover;
-
             @media screen and (max-width: 766px) {
                 width: 300%;
                 height: 200%;
@@ -187,22 +159,18 @@
             }
         }
     }
-
     .line {
         width: 100%;
         height: 2px;
         background: #317ea5;
         margin: 24px 0;
     }
-
     .wrapings {
         // background: white;
         // margin-bottom: 32px;
     }
-
     .details {
         margin-bottom: 8px;
-
         .rute {
             background: #e0a726;
             width: fit-content;
@@ -211,7 +179,6 @@
             position: relative;
             // margin-bottom: 16px;
         }
-
         &__text {
             color: white;
             font-size: 1.3rem;
@@ -219,14 +186,11 @@
             // font-family: 'Kanit';
             font-weight: bold;
         }
-
         table {
             // background: #97c6e4;
             margin-bottom: 0;
-
             td {
                 border-top: 1px solid transparent;
-
                 // &:first-child {
                 //     width: 3%;
                 // }
@@ -236,21 +200,18 @@
                 &:last-child {
                     font-weight: bold;
                 }
-
                 // border-radius: 8px;
                 @media screen and (max-width:766px) {
                     font-size: .9rem;
                 }
             }
         }
-
         .bungkus {
             background: rgba($color: #97c6e4, $alpha: .8);
             padding: 8px;
             border-radius: 8px;
             font-size: 1rem;
         }
-
         &__icon {
             position: absolute;
             right: -32px;
@@ -261,7 +222,6 @@
             height: 48px;
             border-radius: 50%;
             padding: 6px;
-
             img {
                 width: 100%;
                 height: 100%;
@@ -272,6 +232,7 @@
     .keterangan {
         .f12 {
             font-size: 12px;
+            vertical-align: middle;
         }
         .merah {
             width: 30px;
