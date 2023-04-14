@@ -3,26 +3,30 @@
     position: relative;
     background: #87cdd2;
     z-index: 9;
+
     // background: linear-gradient(to bottom, #c9efe7, #5e5e5e);
     .image-awanz {
         position: absolute;
         /* top: 0; */
         left: 0;
         right: 0;
-        z-index: 9;
+        z-index: 11;
         bottom: -1px;
         height: auto;
         width: 100%;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     @media screen and (max-width: 766px) {
         // background: #bdebee;
         // background: linear-gradient(to bottom, #c7efe7, #bdebee);
     }
+
     .image-awan {
         position: absolute;
         top: 0;
@@ -30,12 +34,14 @@
         right: 0;
         height: auto;
         width: 100%;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
+
     .imagev {
         width: 100vw;
         height: auto;
@@ -44,6 +50,7 @@
         left: 0;
         bottom: 0;
         right: 0;
+
         @keyframes MoveUpDown {
             0% {
                 left: 10%;
@@ -51,36 +58,42 @@
                 opacity: 0;
                 transform: scale(1);
             }
+
             15% {
                 left: 10%;
                 bottom: 26%;
                 opacity: 1;
                 transform: scale(1);
             }
+
             50% {
                 left: 10%;
                 bottom: 16%;
                 opacity: 1;
                 transform: scale(1.1);
             }
+
             70% {
                 left: 10%;
                 bottom: 10%;
                 opacity: 1;
                 transform: scale(1.2);
             }
+
             85% {
                 left: 10%;
                 bottom: 5%;
                 opacity: 1;
                 transform: scale(1.5);
             }
+
             90% {
                 left: 10%;
                 bottom: 1%;
                 opacity: .5;
                 transform: scale(1.5);
             }
+
             100% {
                 left: 10%;
                 bottom: 0%;
@@ -88,6 +101,7 @@
                 transform: scale(1.5);
             }
         }
+
         @keyframes MoveUpDownMob {
             0% {
                 left: 10%;
@@ -95,36 +109,42 @@
                 opacity: 0;
                 transform: scale(1);
             }
+
             15% {
                 left: 10%;
                 bottom: 35%;
                 opacity: 1;
                 transform: scale(1);
             }
+
             50% {
                 left: 10%;
                 bottom: 16%;
                 opacity: 1;
                 transform: scale(1.3);
             }
+
             70% {
                 left: 10%;
                 bottom: 10%;
                 opacity: 1;
                 transform: scale(1.5);
             }
+
             85% {
                 left: 10%;
                 bottom: 5%;
                 opacity: 1;
                 transform: scale(1.5);
             }
+
             90% {
                 left: 10%;
                 bottom: 1%;
                 opacity: .5;
                 transform: scale(1.5);
             }
+
             100% {
                 left: 10%;
                 bottom: 0%;
@@ -132,6 +152,7 @@
                 transform: scale(1.5);
             }
         }
+
         @keyframes MoveUpDownMobH {
             0% {
                 left: 40%;
@@ -139,36 +160,42 @@
                 opacity: 0;
                 transform: scale(.5);
             }
+
             15% {
                 left: 40%;
                 bottom: 40%;
                 opacity: 1;
                 transform: scale(.7);
             }
+
             50% {
                 left: 40%;
                 bottom: 38%;
                 opacity: 1;
                 transform: scale(.7);
             }
+
             70% {
                 left: 40%;
                 bottom: 38%;
                 opacity: 1;
                 transform: scale(.8);
             }
+
             85% {
                 left: 40%;
                 bottom: 37%;
                 opacity: 1;
                 transform: scale(1);
             }
+
             90% {
                 left: 40%;
                 bottom: 36%;
                 opacity: .5;
                 transform: scale(1);
             }
+
             100% {
                 left: 40%;
                 bottom: 36%;
@@ -176,6 +203,7 @@
                 transform: scale(1);
             }
         }
+
         @keyframes MoveTo {
             0% {
                 left: 35%;
@@ -183,36 +211,42 @@
                 opacity: 0;
                 transform: scale(1.5);
             }
+
             15% {
                 left: 35%;
                 bottom: 16%;
                 opacity: 1;
                 transform: scale(1.5);
             }
+
             50% {
                 left: 35%;
                 bottom: 26%;
                 opacity: 1;
                 transform: scale(1.4);
             }
+
             70% {
                 left: 35%;
                 bottom: 30%;
                 opacity: 1;
                 transform: scale(1.2);
             }
+
             85% {
                 left: 35%;
                 bottom: 35%;
                 opacity: 1;
                 transform: scale(1);
             }
+
             90% {
                 left: 35%;
                 bottom: 35%;
                 opacity: .5;
                 transform: scale(1);
             }
+
             100% {
                 left: 35%;
                 bottom: 35%;
@@ -220,6 +254,7 @@
                 transform: scale(1);
             }
         }
+
         @keyframes MoveToTruck {
             0% {
                 left: 55%;
@@ -227,36 +262,42 @@
                 opacity: 0;
                 transform: scale(1.5);
             }
+
             15% {
                 left: 55%;
                 bottom: 16%;
                 opacity: 1;
                 transform: scale(1.5);
             }
+
             50% {
                 left: 55%;
                 bottom: 26%;
                 opacity: 1;
                 transform: scale(1.4);
             }
+
             70% {
                 left: 55%;
                 bottom: 30%;
                 opacity: 1;
                 transform: scale(1.2);
             }
+
             85% {
                 left: 55%;
                 bottom: 35%;
                 opacity: 1;
                 transform: scale(1);
             }
+
             90% {
                 left: 55%;
                 bottom: 35%;
                 opacity: .5;
                 transform: scale(1);
             }
+
             100% {
                 left: 55%;
                 bottom: 35%;
@@ -264,6 +305,7 @@
                 transform: scale(1);
             }
         }
+
         &_merah {
             position: absolute;
             bottom: 26%;
@@ -273,17 +315,20 @@
             animation: MoveUpDown 4s linear infinite;
             transition: transform .2s;
             transform: scale(1);
+
             @media screen and (max-width: 766px) {
                 width: 50px;
                 bottom: 30%;
                 animation: MoveUpDownMob 4s linear infinite;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         &_hijau {
             position: absolute;
             bottom: 56%;
@@ -292,6 +337,7 @@
             height: auto;
             // animation: MoveUpDown 4s linear infinite;
             transition: transform .2s;
+
             // transform: scale(1);
             @media screen and (max-width: 766px) {
                 width: 50px;
@@ -299,12 +345,14 @@
                 transform: scale(.5);
                 animation: MoveUpDownMobH 4s linear infinite;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         &_biru {
             position: absolute;
             bottom: 16%;
@@ -314,15 +362,18 @@
             animation: MoveTo 3s linear infinite;
             transition: transform .2s;
             transform: scale(1.5);
+
             @media screen and (max-width: 766px) {
                 width: 40px;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         &_truck {
             position: absolute;
             bottom: 16%;
@@ -334,15 +385,18 @@
             animation: MoveToTruck 5.5s linear infinite;
             transition: transform .2s;
             transform: scale(1.5);
+
             @media screen and (max-width: 766px) {
                 width: 40px;
             }
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         @media screen and (max-width: 766px) {
             width: 100vw;
             /* height: 100vh; */
@@ -354,22 +408,26 @@
             left: 0;
             right: 0;
         }
+
         img {
             width: 100%;
             max-width: 100% !important;
             height: 100%;
             object-fit: cover;
+
             @media screen and (max-width: 766px) {
                 object-fit: contain;
             }
         }
     }
+
     .semua {
         display: block;
         border-bottom: 2px solid;
         padding: 8px 0;
         // width: 680px;// margin: 0 auto;
     }
+
     .text2,
     .text4 {
         display: inline-block;
@@ -378,9 +436,11 @@
         vertical-align: middle;
         font-size: 2rem;
         text-align: left;
+
         @media screen and (max-width: 766px) {
             text-align: center;
         }
+
         .cek {
             width: 80px;
             height: 80px;
@@ -388,21 +448,26 @@
             padding: 8px;
             display: inline-block;
             border-radius: 50%;
+
             @media screen and (max-width: 766px) {
                 display: block;
                 text-align: center;
             }
+
             background: rgba($color: white, $alpha: .6);
+
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: contain;
             }
         }
+
         @media screen and (max-width: 766px) {
             font-size: 1rem;
         }
     }
+
     .font-3 {
         font-size: 3.5rem;
         display: inline-block;
@@ -412,6 +477,7 @@
         color: #fff;
         text-shadow: 1px 1px black;
         text-align: right;
+
         @media screen and (max-width: 766px) {
             display: inline-block;
             /* text-align: right; */
@@ -423,6 +489,7 @@
             text-align: right;
         }
     }
+
     .text3 {
         display: inline-block;
         width: 35%;
@@ -433,6 +500,7 @@
         text-shadow: 1px 1px black;
         vertical-align: middle;
         font-size: 3.5rem;
+
         @media screen and (max-width: 766px) {
             display: inline-block;
             /* text-align: right; */
@@ -444,22 +512,27 @@
             text-align: right;
         }
     }
+
     .box {
         position: relative;
         width: 100%;
         min-height: 100vh;
         padding: 32px;
         background: linear-gradient(to bottom, #c7efe7, #bdebee);
+
         // background: linear-gradient(to bottom, #c7efe7, #bdebee);
         @media screen and (max-width: 766px) {
             padding: 32px 24px;
         }
     }
+
     .box .text1 {
         display: block;
+
         @media screen and (max-width: 766px) {
             padding-top: 1.2rem;
         }
+
         h2 {
             display: inline-block;
             line-height: 3rem;
@@ -468,22 +541,27 @@
             font-family: 'Kanit';
             text-shadow: 2px 2px #000;
         }
+
         .first {
             @media screen and (max-width: 766px) {
                 font-size: 3.5rem;
                 line-height: 3rem;
             }
         }
+
         .second {
             margin-left: 8px;
+
             @media screen and (max-width: 766px) {
                 font-size: 1rem;
             }
         }
     }
+
     .box img {
         max-width: 300px;
     }
+
     .box2 {
         position: relative;
         width: 100%;
@@ -494,11 +572,13 @@
         // background: #43a85c;
         // background: linear-gradient(to bottom, #c7efe7, #bdebee);
         background: #82cdd4;
+
         @media screen and (max-width: 766px) {
             text-align: center;
             padding: 32px 8px;
             // background: transparent;
         }
+
         &::before {
             @media screen and (max-width: 766px) {
                 content: "";
@@ -511,6 +591,7 @@
             }
         }
     }
+
     .box2 {
         h2 {
             display: inline-block;
@@ -521,22 +602,27 @@
             font-family: 'Kanit';
             text-shadow: 2px 2px #000;
         }
+
         .first {
             @media screen and (max-width: 766px) {
                 font-size: 3.5rem;
             }
         }
+
         .second {
             margin-left: 8px;
+
             @media screen and (max-width: 766px) {
                 font-size: 2.8rem;
             }
         }
     }
+
     .bg-whites {
         background: rgba(255, 255, 255, .3);
         position: relative;
         z-index: 29;
+
         @media screen and (max-width: 766px) {
             background: transparent;
         }

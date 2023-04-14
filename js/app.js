@@ -216,7 +216,7 @@ $(function () {
 
     $(".count").each(function () {
         $(this).data('count', parseInt($(this).html(), 10));
-        $(this).html('1500');
+        $(this).html('1800');
         $(this).data("isCounting", false);
     });
 
