@@ -377,10 +377,9 @@
         vertical-align: middle;
         font-size: 2rem;
         text-align: left;
-        @media screen and (max-width:766px) {
+        @media screen and (max-width: 766px) {
             text-align: center;
         }
-        
         .cek {
             width: 80px;
             height: 80px;
@@ -388,7 +387,7 @@
             padding: 8px;
             display: inline-block;
             border-radius: 50%;
-            @media screen and (max-width:766px) {
+            @media screen and (max-width: 766px) {
                 display: block;
                 text-align: center;
             }
@@ -497,6 +496,18 @@
         @media screen and (max-width: 766px) {
             text-align: center;
             padding: 32px 8px;
+            // background: transparent;
+        }
+        &::before {
+            @media screen and (max-width: 766px) {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -28px;
+                right: 0;
+                background: #5e5e5e;
+                height: 10vh;
+            }
         }
     }
     .box2 {
@@ -520,9 +531,11 @@
             }
         }
     }
-
     .bg-whites {
-        background: rgba(255,255,255,.3);
+        background: rgba(255, 255, 255, .3);
         position: relative;
+        @media screen and (max-width: 766px) {
+            background: transparent;
+        }
     }
 }
