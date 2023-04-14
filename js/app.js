@@ -1,15 +1,15 @@
-$(document).ready(function() {
-        new WOW().init();
-        // AOS.init({
-        //     duration: 700,
-        //   })
+$(document).ready(function () {
+    new WOW().init();
+    // AOS.init({
+    //     duration: 700,
+    //   })
 
 
-    })
-    // $(window).on("load", function () {
-    //   $(".preloader").fadeOut(10000);
-    //   $(".preloader").remove();
-    // });
+})
+// $(window).on("load", function () {
+//   $(".preloader").fadeOut(10000);
+//   $(".preloader").remove();
+// });
 
 // const tl = gsap.timeline({
 //     scrollTrigger: {
@@ -115,7 +115,7 @@ $(document).ready(function() {
 $('.single-item').slick();
 
 //kayak faq
-$('.kategori-item').click(function(event) {
+$('.kategori-item').click(function (event) {
     var id = $(this).attr('data-id');
     var toShow = '.show-' + id;
 
@@ -123,7 +123,7 @@ $('.kategori-item').click(function(event) {
     $(toShow).fadeIn();
 });
 
-$('.kategori-itemx').click(function(event) {
+$('.kategori-itemx').click(function (event) {
     var id = $(this).attr('data-id');
     var toShow = '.showx-' + id;
 
@@ -134,7 +134,7 @@ $('.kategori-itemx').click(function(event) {
 
 $("#baru-jawa-table").hide()
 $("#fungsi-jawa-table").hide()
-    //     // $("#biru-jawa").hide();
+//     // $("#biru-jawa").hide();
 $("#biru-jawa-angka").hide();
 $("#kuning-jawa-angka").hide();
 // $("#kuning-jawa").hide();
@@ -193,7 +193,7 @@ $("#sumut-table-fungsi").hide();
 
 
 
-$(function() {
+$(function () {
     function isScrolledIntoView($elem) {
         var docViewTop = $(window).scrollTop();
         var docViewBottom = docViewTop + $(window).height();
@@ -207,25 +207,25 @@ $(function() {
         if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
             $this.html(++current);
             $this.data("isCounting", true);
-            setTimeout(function() {
+            setTimeout(function () {
                 $this.data("isCounting", false);
                 count($this);
             }, 1);
         }
     }
 
-    $(".count").each(function() {
+    $(".count").each(function () {
         $(this).data('count', parseInt($(this).html(), 10));
-        $(this).html('1900');
+        $(this).html('1500');
         $(this).data("isCounting", false);
     });
 
     function startCount() {
-        $(".count").each(function() {
+        $(".count").each(function () {
             count($(this));
         });
     };
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         startCount();
     });
 });
