@@ -105,6 +105,22 @@ body {
         display: block;
     }
 }
+#nav {
+    background: rgba(0,120,130,0.5) !important;
+    z-index: 99 !important;
+    backdrop-filter: blur(11px);
+}
+.share_icon>a {
+    padding: 0;
+}
+.share_icon>a i {
+    font-size: 20px;
+    line-height: 37px;
+    @media screen and (max-wdith) {
+        font-size: initial;
+        line-height: initial;
+    }
+}
 
 h2,
 h3 {
