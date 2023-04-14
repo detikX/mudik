@@ -113,9 +113,12 @@ body {
 .share_icon>a {
     padding: 0;
 }
+#share {
+    z-index: 108;
+}
 .share_icon>a i {
     font-size: 20px;
-    line-height: 37px;
+    line-height: 0;
     @media screen and (max-wdith) {
         font-size: initial;
         line-height: initial;
