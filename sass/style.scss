@@ -10,6 +10,7 @@
 @import 'tol-angka';
 @import 'penutup';
 @import 'jadwal';
+
 main,
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -34,9 +35,11 @@ body {
     &-slide {
         margin: 0 16px;
     }
+
     &-list {
         margin: 0 -16px;
     }
+
     &-next,
     &-prev {
         border: 2px solid rgba(255, 255, 255, 0.5);
@@ -45,11 +48,13 @@ body {
         // backdrop-filter: blur(2px);
         height: 42px;
         border-radius: 50%;
+
         &:hover,
         &:focus,
         &:active {
             background: rgba(#87c3d3, .8);
         }
+
         &::before {
             font-family: "FontAwesome";
             z-index: 99;
@@ -57,25 +62,30 @@ body {
             color: white;
         }
     }
+
     &-next {
         right: -16px;
         // left: 0;
         // left: -15%;
         z-index: 9;
+
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f054";
         }
     }
+
     &-prev {
         // left: -20%;
         left: -16px;
         z-index: 9;
+
         // transform: translate(-100%, 0%);
         &::before {
             content: "\f053";
         }
     }
+
     &-dots {
         li {
             button {
@@ -94,6 +104,7 @@ body {
 
 .isdesktop {
     display: block;
+
     @media screen and (max-width: 766px) {
         display: none;
     }
@@ -101,24 +112,34 @@ body {
 
 .ismobile {
     display: none;
+
     @media screen and (max-width: 766px) {
         display: block;
     }
 }
+
 #nav {
-    background: rgba(0,120,130,0.5) !important;
+    background: rgba(0, 120, 130, 0.5) !important;
     z-index: 99 !important;
     backdrop-filter: blur(11px);
+
+    @media screen and (max-width:766px) {
+        backdrop-filter: initial;
+    }
 }
+
 .share_icon>a {
     padding: 0;
 }
+
 #share {
     z-index: 108;
 }
+
 .share_icon>a i {
     font-size: 20px;
     line-height: initial;
+
     @media screen and (max-wdith) {
         font-size: initial;
         line-height: initial;
@@ -134,11 +155,13 @@ section {
     // overflow-x: hidden;
     padding: 32px 0;
     min-height: 100vh;
+
     // position: relative;
     // z-index: 8;
     p,
     div {
         font-size: 1.2rem;
+
         @media screen and (max-width: 766px) {
             font-size: 1rem;
         }
@@ -154,20 +177,19 @@ section {
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
