@@ -1,72 +1,68 @@
 .banner {
     position: relative;
-
     @keyframes MoveUpAwan {
-
         0%,
         100% {
             right: 5vw;
         }
-
         50% {
             right: 7vw;
         }
     }
-
+    @keyframes MoveUpAwanR {
+        0%,
+        100% {
+            left: 5vw;
+        }
+        50% {
+            left: 7vw;
+        }
+    }
     .awan {
         position: absolute;
         height: 5vh;
         width: 120px;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-
         &-1 {
             right: 5vw;
             height: auto;
             animation: MoveUpAwan 3.5s linear infinite;
         }
-
         &-2 {
             left: 5vw;
             height: 5vh;
+            animation: MoveUpAwanR 2.5s linear infinite;
         }
-
         &-3 {}
     }
-
     .mobil {
         position: absolute;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-
         &-1 {
             left: 42vw;
             width: 230px;
             height: 230px;
             top: 60vh;
             z-index: 4;
-
             @media screen and (max-width: 766px) {
                 top: 61vh;
                 width: 200px;
             }
         }
-
         &-2 {
             left: 15vw;
             width: 260px;
             height: auto;
             bottom: 2vh;
             z-index: 5;
-
             @media screen and (max-width: 766px) {
                 left: 0vw;
                 width: 230px;
@@ -74,26 +70,22 @@
                 bottom: 8vh;
             }
         }
-
         &-3 {
             width: 280px;
             height: auto;
             right: 10vw;
             top: 60vh;
             z-index: 2;
-
             @media screen and (max-width: 766px) {
                 right: initial;
                 left: 70vw;
             }
         }
-
         &-4 {
             width: 200px;
             right: 0;
             height: auto;
             bottom: 2vh;
-
             @media screen and (max-width: 766px) {
                 bottom: 8vh;
                 z-index: 9;
@@ -101,25 +93,21 @@
             }
         }
     }
-
     .imagex {
         position: absolute;
         inset: 0;
         width: 100%;
         height: 100%;
-
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-
     .judul {
         position: absolute;
         right: 5%;
         top: 10%;
-
         // transform: translate(-50%, -50%);
         // background: white;
         @media screen and (max-width: 766px) {
@@ -127,39 +115,32 @@
             left: 0;
             top: 10%;
         }
-
         .tu {
             font-size: 4rem;
             line-height: 2.5rem;
-
             @media screen and (max-width: 766px) {
                 font-size: 2.6rem;
                 line-height: 2.5rem;
             }
         }
-
         .wa {
             font-size: 10rem;
             line-height: 8.5rem;
-
             @media screen and (max-width: 766px) {
                 font-size: 6rem;
                 letter-spacing: 2px;
                 line-height: 4.5rem;
             }
         }
-
         .ga {
             letter-spacing: 0;
             font-size: 3rem;
             line-height: 3rem;
-
             @media screen and (max-width: 766px) {
                 font-size: 1.9rem;
                 line-height: 2rem;
             }
         }
-
         h2 {
             // font-family: 'Alkatra';
             font-family: "Kanit";
@@ -169,7 +150,6 @@
             line-height: 5rem;
             text-align: right;
             text-shadow: 2px 2px #ffffff;
-
             @media screen and (max-width: 766px) {
                 // font-size: 2.8rem;
                 // line-height: 2.6rem;
