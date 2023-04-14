@@ -118,7 +118,7 @@ body {
 }
 .share_icon>a i {
     font-size: 20px;
-    line-height: 0;
+    line-height: initial;
     @media screen and (max-wdith) {
         font-size: initial;
         line-height: initial;
