@@ -314,7 +314,7 @@
             transition: transform .2s;
             transform: scale(1.5);
             @media screen and (max-width: 766px) {
-                width: 60px;
+                width: 40px;
             }
             img {
                 width: 100%;
@@ -325,7 +325,7 @@
         &_truck {
             position: absolute;
             bottom: 16%;
-            display: none;
+            // display: none;
             left: 55%;
             z-index: 9;
             width: 150px;
@@ -334,7 +334,7 @@
             transition: transform .2s;
             transform: scale(1.5);
             @media screen and (max-width: 766px) {
-                width: 60px;
+                width: 40px;
             }
             img {
                 width: 100%;
