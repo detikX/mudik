@@ -536,6 +536,7 @@
     .bg-whites {
         background: rgba(255, 255, 255, .3);
         position: relative;
+        z-index: 29;
         @media screen and (max-width: 766px) {
             background: transparent;
         }
